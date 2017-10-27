@@ -8,7 +8,7 @@
 */
 ?>
 
-<?php if (Mage::getStoreConfig('skipcheckoutlogin_section/skipcheckoutlogin_group/skipcheckoutlogin_enable')): ?>
+<?php if (Mage::getStoreConfig('skipcheckoutlogin_section/skipcheckoutlogin_group/skipcheckoutlogin_enable') && !Mage::getSingleton('customer/session')->isLoggedIn()): ?>
 
     <?php $checkoutMethod = Mage::getSingleton('checkout/type_onepage')->getCheckoutMethod(); ?>
     <?php if ($checkoutMethod == 'guest'): ?>
