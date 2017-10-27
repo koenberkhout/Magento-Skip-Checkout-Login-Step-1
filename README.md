@@ -20,6 +20,9 @@ The options can be found in  *Admin > Configuration > SALES > Skip Checkout logi
   *  **Enable extension**: Enable / disable the skip checkout login feature
   *  **Checkout type**: Choose the default checkout type if extension is enabled
 
+## Compatibility
+
+This extension is tested on Magento 1.9.x.x
   
 ## Class rewrites
 
