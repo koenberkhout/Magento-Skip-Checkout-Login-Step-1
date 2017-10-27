@@ -20,10 +20,19 @@ The options can be found in  *Admin > Configuration > SALES > Skip Checkout logi
   *  **Enable extension**: Enable / disable the skip checkout login feature
   *  **Checkout type**: Choose the default checkout type if extension is enabled
 
+## Demo
+
+Choose a default checkout type:
+
+ * Demo [always checkout as guest](https://www.skipcheckoutlogin.nl/guest/){:target="_blank"}
+ * Demo [always register](https://www.skipcheckoutlogin.nl/register/){:target="_blank"}
+
+
 ### Compatibility
 
 This extension is tested on Magento 1.9.x.x
-  
+
+
 ### Class rewrites
 
   * Mage_Checkout_Block_Onepage
