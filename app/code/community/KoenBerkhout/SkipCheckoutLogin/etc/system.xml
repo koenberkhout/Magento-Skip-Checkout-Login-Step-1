@@ -1,0 +1,60 @@
+<?xml version="1.0"?>
+
+<!--
+/**
+* Skip Checkout Login
+* https://github.com/koenberkhout/Magento-Skip-Checkout-Login-Step-1
+*
+* @author    Koen Berkhout
+* @copyright (c) Koen Berkhout - All rights reserved.
+*/
+-->
+
+<config>
+	  <sections>
+		<skipcheckoutlogin_section  translate="label" module="skipcheckoutlogin">                    
+		<label>Skip Checkout Login</label>
+		<tab>sales</tab>
+		<frontend_type>text</frontend_type>
+		<sort_order>0</sort_order>
+		<show_in_default>1</show_in_default>
+		<show_in_website>1</show_in_website>
+		<show_in_store>1</show_in_store>            
+					<groups>
+				      <skipcheckoutlogin_group translate="label"> 
+					  <label>Skip Checkout Login options</label>
+                      <comment><![CDATA[Config options for KoenBerkhout_SkipCheckoutLogin.<br/>
+					Developed by <a href="https://github.com/koenberkhout" target="_blank">Koen Berkhout</a><br/><br/>
+					<hr/><br/>]]></comment>
+					  <frontend_type>text</frontend_type>
+					  <sort_order>0</sort_order>
+					  <show_in_default>1</show_in_default>
+					  <show_in_website>1</show_in_website>
+					  <show_in_store>1</show_in_store>
+				       <fields>
+                          <skipcheckoutlogin_enable translate="label">
+                            <label>Enable extension</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>0</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+							<comment>Enable the skip checkout login feature</comment>
+                          </skipcheckoutlogin_enable>
+                          <skipcheckoutlogin_type translate="label">
+                            <label>Checkout type</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_Skipcheckoutloginoptions</source_model>
+                            <sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+							<comment>Choose the default checkout type if extension is enabled.</comment>
+                          </skipcheckoutlogin_type>
+					   </fields>
+					   </skipcheckoutlogin_group>
+					</groups>
+		</skipcheckoutlogin_section>
+	  </sections>
+</config>

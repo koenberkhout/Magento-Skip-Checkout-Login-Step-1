@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+
+<!--
+/**
+* Skip Checkout Login
+* https://github.com/koenberkhout/Magento-Skip-Checkout-Login-Step-1
+*
+* @author    Koen Berkhout
+* @copyright (c) Koen Berkhout - All rights reserved.
+*/
+-->
+
+<layout version="0.1.0">
+
+    <default>
+        <reference name="before_body_end">
+            <block type="core/template" name="koenberkhout_skipcheckoutlogin_js" template="koenberkhout/skipcheckoutlogin/js.phtml" />
+        </reference>
+    </default>
+	
+</layout>

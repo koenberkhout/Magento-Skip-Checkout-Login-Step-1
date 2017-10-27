@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+
+<!--
+/**
+* Skip Checkout Login
+* https://github.com/koenberkhout/Magento-Skip-Checkout-Login-Step-1
+*
+* @author    Koen Berkhout
+* @copyright (c) Koen Berkhout - All rights reserved.
+*/
+-->
+
+<config>
+    <acl>
+        <resources>
+            <admin>
+                <children>
+                    <system>
+                        <children>
+                            <config>
+                                <children>
+                                    <skipcheckoutlogin_section translate="title" module="skipcheckoutlogin">
+                                        <title>Skip Checkout Login Section</title>
+                                        <sort_order>0</sort_order>
+                                    </skipcheckoutlogin_section>
+                                </children>
+                            </config>
+                        </children>
+                    </system>
+                </children>
+            </admin>
+        </resources>
+    </acl>
+</config>

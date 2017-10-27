@@ -1,0 +1,71 @@
+<?xml version="1.0"?>
+
+<!--
+/**
+* Skip Checkout Login
+* https://github.com/koenberkhout/Magento-Skip-Checkout-Login-Step-1
+*
+* @author    Koen Berkhout
+* @copyright (c) Koen Berkhout - All rights reserved.
+*/
+-->
+
+<config>
+  <modules>
+    <KoenBerkhout_SkipCheckoutLogin>
+      <version>1.0.0</version>
+    </KoenBerkhout_SkipCheckoutLogin>
+  </modules>
+  <frontend>
+    <routers>
+      <skipcheckoutlogin>
+        <use>standard</use>
+          <args>
+            <module>KoenBerkhout_SkipCheckoutLogin</module>
+            <frontName>skipcheckoutlogin</frontName>
+          </args>
+      </skipcheckoutlogin>
+    </routers>
+    <layout>
+        <updates>
+            <koenberkhout_skipcheckoutlogin>
+                <file>koenberkhout_skipcheckoutlogin.xml</file>
+            </koenberkhout_skipcheckoutlogin>
+        </updates>
+    </layout>
+  </frontend>
+  <global>
+		<rewrite>        
+            <koenberkhout_skipcheckoutlogin_checkout_onepagecontroller>
+                <from><![CDATA[#^/checkout/onepage/#]]></from>
+                <to>/skipcheckoutlogin/checkout_onepage/</to>
+            </koenberkhout_skipcheckoutlogin_checkout_onepagecontroller>
+		</rewrite>
+    <helpers>
+      <skipcheckoutlogin>
+        <class>KoenBerkhout_SkipCheckoutLogin_Helper</class>
+      </skipcheckoutlogin>
+    </helpers>
+	<blocks>
+	  <skipcheckoutlogin>
+		<class>KoenBerkhout_SkipCheckoutLogin_Block</class>
+	  </skipcheckoutlogin>
+			<checkout>
+				<rewrite>
+					<onepage>KoenBerkhout_SkipCheckoutLogin_Block_Checkout_Onepage</onepage>
+				</rewrite>
+			</checkout>
+	</blocks>
+  </global>
+  <admin>
+	<routers>
+	  <skipcheckoutlogin>
+	    <use>admin</use>
+		<args>
+		  <module>KoenBerkhout_SkipCheckoutLogin</module>
+		  <frontName>admin_skipcheckoutlogin</frontName>
+		</args>
+	  </skipcheckoutlogin>
+	</routers>
+  </admin>
+</config> 
