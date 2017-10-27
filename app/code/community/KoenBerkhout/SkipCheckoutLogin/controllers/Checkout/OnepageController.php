@@ -48,12 +48,13 @@ if (!Mage::getStoreConfig('skipcheckoutlogin_section/skipcheckoutlogin_group/ski
             $this->_initLayoutMessages('customer/session');
             $this->getLayout()->getBlock('head')->setTitle($this->__('Checkout'));
             
-            $skipCheckoutLoginType = Mage::getStoreConfig('skipcheckoutlogin_section/skipcheckoutlogin_group/skipcheckoutlogin_type');
-            // 1 => always register
-            // 2 => always checkout as guest
-            
-            $method = ($skipCheckoutLoginType == 1) ? 'register' : 'guest';
-            $this->getOnepage()->saveCheckoutMethod($method);
+            if (!Mage::getSingleton('customer/session')->isLoggedIn()) {
+                $skipCheckoutLoginType = Mage::getStoreConfig('skipcheckoutlogin_section/skipcheckoutlogin_group/skipcheckoutlogin_type');
+                // 1 => always register
+                // 2 => always checkout as guest
+                $method = ($skipCheckoutLoginType == 1) ? 'register' : 'guest';
+                $this->getOnepage()->saveCheckoutMethod($method);
+            }
             
             $this->renderLayout();
         }
