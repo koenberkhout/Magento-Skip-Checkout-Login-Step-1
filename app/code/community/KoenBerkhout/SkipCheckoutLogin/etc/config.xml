@@ -13,7 +13,7 @@
 <config>
   <modules>
     <KoenBerkhout_SkipCheckoutLogin>
-      <version>1.0.0</version>
+      <version>1.0.1</version>
     </KoenBerkhout_SkipCheckoutLogin>
   </modules>
   <frontend>
