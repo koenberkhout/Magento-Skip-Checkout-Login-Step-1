@@ -24,8 +24,8 @@ The options can be found in  *Admin > Configuration > SALES > Skip Checkout logi
 
 Choose a default checkout type:
 
- * Demo [always checkout as guest](https://www.skipcheckoutlogin.nl/guest/){:target="_blank"}
- * Demo [always register](https://www.skipcheckoutlogin.nl/register/){:target="_blank"}
+ * Demo [always checkout as guest](https://www.skipcheckoutlogin.nl/guest/)
+ * Demo [always register](https://www.skipcheckoutlogin.nl/register/)
 
 
 ### Compatibility
