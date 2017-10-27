@@ -1,5 +1,5 @@
 # Magento-Skip-Checkout-Login-Step-1
-By using the Skip Checkout Login extension you can skip the confusing first checkout step where customers have to choose between login, checkout or register.
+By using the Skip Checkout Login extension you can skip the confusing first checkout step where customers have to choose between login, checkout or register. Removing step 1 will probably increase your conversion rates :)
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
