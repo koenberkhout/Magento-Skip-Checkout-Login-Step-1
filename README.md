@@ -22,6 +22,8 @@ The options can be found in  *Admin > Configuration > SALES > Skip Checkout logi
 
 ## Demo
 
+[TODO]
+
 Choose a default checkout type:
 
  * Demo [always checkout as guest](https://www.skipcheckoutlogin.nl/guest/)
